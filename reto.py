@@ -1,16 +1,13 @@
-numero=int(input("Digame cuantos numeros tiene el arreglo: "))
+def promedio_lista():
+    nums=[]
+    numero=int(input("Digame cuantos numeros tiene el arreglo: "))
+    i=0
+    while i < numero:
+        numA=float(input(f"Digite los numeros  {i+1}: "))
+        nums.append(numA)
+        i+=1
+    prom = sum(nums)/len(nums)
+    print(f'el promedio es {prom}')
+    print(f"La lista de numeros creada es: {nums}")
 
-def sumar():
-    numA={}
-    if numero<1:
-        print("Imposible")
-    else:
-        numeros=[]
-        for i in range(numero):
-            numA=input(f"Digite los numeros  {i+1}: ")
-            numeros.append(numA)
-            
-        print(f"La lista de numeros creada es: {numeros}")
-        
-
-sumar()
+promedio_lista()
